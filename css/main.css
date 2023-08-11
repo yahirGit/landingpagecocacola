@@ -1,0 +1,137 @@
+@import url("normalize.css");
+/* /// ----- DOCUMENTATION CSS ----- ///
+
+
+* -> 1. RESET OR IMPORT(RESET CSS OR NORMALIZE CSS) STYLE CSS
+* -> 2. HELPER CLASS
+* -> 3. GENERAL STYLES 
+* -> 4. HEADER SECTION
+* -> 5. SECTION INICIO
+* -> 6. APP NOSE STYLES
+* -> 7. APP FOOTER
+*/
+
+
+
+
+/* ------ 2. HELPER CLASS ------*/
+.btn_rojo{
+    background-color: #ff0000;
+    color: #fff;
+}
+.btn_border{
+    border: 1px solid #ff0000;
+}
+/* ----------- 2. <<END>> HELPER CLASS -----------*/
+
+
+
+
+/* ------ 3. GENERAL STYLES ------*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+} 
+a{
+    display: inline-block;
+}
+/* ----------- 3. <<END>> GENERAL STYLES -----------*/
+
+
+
+
+/* ------ 4. HEADER SECTION ------*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo{
+    width: 102px;
+}
+header .container a{
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin: 0 0.9em;
+    padding: 1.1em 0;
+}
+/* ----------- 4. <<END>> HEADER SECTION -----------*/
+
+
+
+/* ------ 5. SECTION INICIO ------*/
+#inicio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background: url(../img/bannerprincipal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh; */
+}
+#inicio img{
+    width: 100%;
+     /*static,inline,inline-block,block,flex*/
+}
+#inicio .bloque_inicio{
+    position: absolute;
+    text-align: center;
+    /*display: block; static,inline,inline-block,block,flex*/
+    /* top: 40%;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    margin-left: -200px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; */
+}
+#inicio .bloque_inicio h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+#inicio .bloque_inicio p{
+    color: #fff;
+    font-weight: 400;
+    
+}
+#inicio .bloque_inicio .btn{
+    
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 18px 20px;
+}
+
+
+/* ----------- 5. <<END>> SECTION INICIO -----------*/
